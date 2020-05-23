@@ -1,0 +1,31 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    height: 100vh;
+    background: url('../img/view.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 77, 105, 0.5);
+}
+
+.center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+}
+
+.formWrapper {
+    background: #ffffff;
+    color: #222222;
+    padding: 20px 10px;
+}
