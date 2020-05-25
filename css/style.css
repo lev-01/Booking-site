@@ -28,4 +28,28 @@ header::before {
     background: #ffffff;
     color: #222222;
     padding: 20px 10px;
+    border-radius: 7px;
+}
+
+.form-group {
+    font-size: 13px;
+}
+
+.form-group input {
+    background-color: #e6e6e6;
+    font-size: 13px;
+}
+
+.form-group select {
+    width: 100%;
+    background-color: #e6e6e6;
+}
+
+.formWrapper button {
+    background-color: blue;
+    color: #ffffff;
+    width: 62%;
+    height: 45px;
+    border-radius: 7px;
+    border-width: 0px;
 }
