@@ -8,9 +8,9 @@ try {
 }
 
 function addNewApplication($dbh ,$destination, $checkIn, $checkOut, $rooms, $adults, $children){
-    $sql = 'INSERT INTO applications (location, start_date, end_date, rooms, adults, children) VALUES (:location, :start_date, :end_date, :rooms, :adults, :children)';
+    $sql = 'INSERT INTO applications (destination, start_date, end_date, rooms, adults, children) VALUES (:destination, :start_date, :end_date, :rooms, :adults, :children)';
     $stmt = $dbh->prepare($sql);
-    $stmt->bindValue(':location', $destination, PDO::PARAM_STR);
+    $stmt->bindValue(':destination', $destination, PDO::PARAM_STR);
     $stmt->bindValue(':start_date', $checkIn, PDO::PARAM_STR);
     $stmt->bindValue(':end_date', $checkOut, PDO::PARAM_STR);
     $stmt->bindValue(':rooms', $rooms, PDO::PARAM_INT);
